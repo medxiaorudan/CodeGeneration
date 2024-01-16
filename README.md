@@ -43,20 +43,31 @@ pip install -r requirements.txt
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
 | [Phind CodeLlama v2](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)         | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
 | [WizardCoder-Python](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
-| CodeLlama                    | 7/13/34B         | Many                                            | Meta AI                     | 11092  | 2023-8    | Yes         |
-| WizardCoder                  | 15B              | 80+                                             | WizardLM                    | 661    | 2023-6    | Yes         |
-| replit-glaive                | 3B               | Python                                          | Replit                      | 85     | 2023-7    | Yes         |
-| CodeGeeX                     | 13B              | Python, C++, Java, JavaScript, Go                | THUDM                       | 7419   | 2023-5-16 | Yes         |
-| Starcoder                    | 15B              | 80+                                             | Hugging Face and ServiceNow | 6595   | 2023-5    | Yes         |
-| replit-v1-3b                 | 3B               | 20+                                             | Replit                      | 698    | 2023-5    | Yes         |
-| CodeT5+                      | 220M, 770M, 2B, 6B, 16B | Ruby, JavaScript, Go, Python, Java, PHP      | Salesforce                  | 2436   | 2023-5    | Yes         |
-| IBM Watson Code Assistant    | 350M             | Many                                            | IBM                         |         | 2023-5    | No          |
-| SantaCoder                   | 1.1B             | Python, Java, JavaScript                         | Bigcode                     | 305    | 2023-4    | Yes         |
-| InCoder                      | 1.3B, 6B         | 20                                              | Facebook                    | 280    | 2023-4    | Yes         |
-| GPT4                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
+| [CodeLlama](https://github.com/facebookresearch/codellama)                    | 7/13/34B         | Many                                            | Meta AI                     | 11092  | 2023-8    | Yes         |
+| [WizardCoder](https://huggingface.co/WizardLM/WizardCoder-15B-V1.0)                  | 15B              | 80+                                             | WizardLM                    | 661    | 2023-6    | Yes         |
+| [replit-glaive](https://huggingface.co/sahil2801/replit-code-instruct-glaive)                | 3B               | Python                                          | Replit                      | 85     | 2023-7    | Yes         |
+| [CodeGeeX](https://github.com/THUDM/CodeGeeX)                     | 13B              | Python, C++, Java, JavaScript, Go                | THUDM                       | 7419   | 2023-5-16 | Yes         |
+| [Starcoder](https://github.com/bigcode-project/starcoder)                    | 15B              | 80+                                             | Hugging Face and ServiceNow | 6595   | 2023-5    | Yes         |
+| [replit-v1-3b](https://huggingface.co/replit/replit-code-v1-3b)                 | 3B               | 20+                                             | Replit                      | 698    | 2023-5    | Yes         |
+| [CodeT5+](https://github.com/salesforce/CodeT5)                      | 220M, 770M, 2B, 6B, 16B | Ruby, JavaScript, Go, Python, Java, PHP      | Salesforce                  | 2436   | 2023-5    | Yes         |
+| [IBM Watson Code Assistant](https://www.ibm.com/products/watsonx-code-assistant)    | 350M             | Many                                            | IBM                         |         | 2023-5    | No          |
+| [SantaCoder](https://huggingface.co/bigcode/santacoder)                   | 1.1B             | Python, Java, JavaScript                         | Bigcode                     | 305    | 2023-4    | Yes         |
+| [InCoder](https://github.com/dpfried/incoder)                      | 1.3B, 6B         | 20                                              | Facebook                    | 280    | 2023-4    | Yes         |
+| [GPT4](https://openai.com/gpt-4)                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
 
 ### 🤖 Popular dataset for code generation. Ordered by most recent first
-
+| Name         | Examples                                                | Languages                                                  | ⭐   | Released   |
+|--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
+| HumanEval-X  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
+| CoderEval    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
+| DS-1000      | 1000                                                    | Python                                                     | 146 | 2022-11-18 |
+| MultiPL-E     | "HumanEval" and "MBPP" Python benchmarks, and their translations into other 18 languages. | 19 (include C++ and C)                                   | 108 | 2022-8-17  |
+| XLCoST       | 11198 C++, 11028 Java, 10622 Python, 10735 C#, 9951 JS, 3553 PHP, 574 C | C++, Java, Python, C#, Javascript, PHP, C                | 48  | 2022-6-16  |
+| MBPP         | 974                                                     | Python                                                     | 62  | 2021-8-16  |
+| HumanEval    | 164                                                     | Python                                                     | 1624| 2021-7-17  |
+| APPS         | 10000                                                   | Python                                                     | 316 | 2021-5-20  |
+| CodeXGLUE    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
+| SPoC         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
 
 ### Run the code
 
