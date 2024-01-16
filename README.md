@@ -12,53 +12,35 @@ CodeGeneration
 [🦙 CodeLlama](https://github.com/facebookresearch/codellama) |
 [🛠️ XLCoST Dataset](https://github.com/reddy-lab-code-research/XLCoST/tree/main) | 
 [🔥 PyTorch](https://github.com/pytorch/pytorch) | 
+[🐞 Catch2](https://github.com/catchorg/Catch2) | 
 </div>
-
-
-LLM_NER_MultiNERD is a Using the MultiNERD Named Entity Recognition (NER) dataset, complete the following instructions to train and 
-evaluate a Named Entity Recognition model for English using BERT and XLNET.
-Built on top of the familiar [🤗 Transformers](https://github.com/huggingface/transformers) library.
-
 
 1. finetune wandb 实时观测
 2. 微调后的模型建hugging face
 3. 模型和数据集
 4. 
-## Instructions:
-### System A 
-Fine-tune chosen model bert-base-cased and xlnet-base-cased on the English subset of the training set. 
+## 🎨 Instructions:
+C++ code generation using a pre-trained model. Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input. Leverage a pre-trained code model to generate the C++ code based on specific prompts.
 
-### System B 
-Train a model that will predict only five entity types and the `O` tag (I.e. not part of an entity). Therefore, the necessary [pre-processing](https://github.com/medxiaorudan/LLM_NER_MultiNERD/blob/main/Data_Preprocessing.py) steps should be performed on the dataset. All examples should thus remain, but entity types not belonging to one of the following five should be set to zero: `PERSON(PER)`, `ORGANIZATION(ORG)`, `LOCATION(LOC)`, `DISEASES(DIS)`, `ANIMAL(ANIM)`. Fine-tune the chosen models on the filtered dataset.
-
-### BERT
-BERT (Bidirectional Encoder Representations from Transformers) employs a bidirectional attention mechanism to capture contextual information from both left and right contexts. It uses pre-training tasks, such as masked language modeling, to learn contextualized embeddings. 
-
-### XLNet
-XLNet improves upon BERT by introducing permutation language modeling. It captures bidirectional context like BERT but allows for a more flexible information flow. In Named Entity Recognition (NER) tasks, these models excel at understanding the relationships between words and recognizing entities such as persons, organizations, and locations. Their deep contextual embeddings enable them to capture nuanced patterns, improving accuracy in identifying named entities within text.
-
-## Setting up the Docker environment and installing the dependencies
+## ✨ Setting up the Docker environment and installing the dependencies
 Go to folder ```docker/```.
 ```
-docker build -f Dockerfile -t NER-MultiNERD \
+docker build -f Dockerfile -t CodeGeneration \
 --build-arg username=$(username) .
 ```
 ```
 docker run -it --shm-size 60G --gpus all \
--v /path/to/dir/:/home/username/NER-MultiNERD/ \
--v /path/to/storage/:/storage/ NER-MultiNERD
+-v /path/to/dir/:/home/username/CodeGeneration/ \
+-v /path/to/storage/:/storage/ CodeGeneration
 ```
 You can install the following dependencies to run tasks in the environment:
 ```bash
 pip install -r requirements.txt
 ```
-### Input Format
+### 🚀 Models relevant for code generation. Ordered by most recent first
 
-The BIOS tag scheme of the input, with each character its label for one line. Sentences are split with a null line.
+### 🚀 Popular dataset for code generation. Ordered by most recent first
 
-<left>
-<img src="https://github.com/medxiaorudan/LLM_NER_MultiNERD/blob/main/images/BIOS.PNG" width="220"> 
-</left>
 
 ### Run the code
 
