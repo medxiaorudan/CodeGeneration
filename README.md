@@ -12,7 +12,7 @@ CodeGeneration
 [🦙 CodeLlama](https://github.com/facebookresearch/codellama) |
 [🛠️ XLCoST Dataset](https://github.com/reddy-lab-code-research/XLCoST/tree/main) | 
 [🔥 PyTorch](https://github.com/pytorch/pytorch) | 
-[🐞 Catch2](https://github.com/catchorg/Catch2) | 
+[🐞 Catch2](https://github.com/catchorg/Catch2) 
 </div>
 
 1. finetune wandb 实时观测
