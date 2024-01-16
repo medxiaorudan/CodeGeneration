@@ -41,8 +41,8 @@ pip install -r requirements.txt
 
 | Name                        | Size             | Languages                                       | Organization                | ⭐/ ❤️  | Released  | Open Source |
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
-| Phind CodeLlama v2          | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
-| WizardCoder-Python           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
+| [Phind CodeLlama v2](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)         | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
+| [WizardCoder-Python](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
 | CodeLlama                    | 7/13/34B         | Many                                            | Meta AI                     | 11092  | 2023-8    | Yes         |
 | WizardCoder                  | 15B              | 80+                                             | WizardLM                    | 661    | 2023-6    | Yes         |
 | replit-glaive                | 3B               | Python                                          | Replit                      | 85     | 2023-7    | Yes         |
