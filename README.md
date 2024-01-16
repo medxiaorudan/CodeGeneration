@@ -4,7 +4,7 @@ CodeGeneration
 </h1>
 
 <center>
-<img src="https://github.com/medxiaorudan/LLM_NER_MultiNERD/blob/main/images/displacy.PNG" width="700" > 
+<img src="https://github.com/medxiaorudan/CodeGeneration/blob/main/images/CPP.gif" width="700" > 
 </center>
 
 [🤗 MultiNERD Dataset](https://huggingface.co/models?library=span-marker) |
