@@ -51,7 +51,7 @@ pip install -r requirements.txt
 | [InCoder](https://github.com/dpfried/incoder)                      | 1.3B, 6B         | 20                                              | Facebook                    | 280    | 2023-4    | Yes         |
 | [GPT4](https://openai.com/gpt-4)                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
 
-### 🤖 Popular dataset for code generation (ordered by most recent first). 
+### 🤖 Popular datasets for code generation (ordered by most recent first). 
 | Name         | Examples                                                | Languages                                                  | ⭐   | Released   |
 |--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
 | [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x)  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
