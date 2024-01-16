@@ -17,6 +17,11 @@ LLM_NER_MultiNERD is a Using the MultiNERD Named Entity Recognition (NER) datase
 evaluate a Named Entity Recognition model for English using BERT and XLNET.
 Built on top of the familiar [🤗 Transformers](https://github.com/huggingface/transformers) library.
 
+
+1. finetune wandb 实时观测
+2. 微调后的模型建hugging face
+3. 模型和数据集
+4. 
 ## Instructions:
 ### System A 
 Fine-tune chosen model bert-base-cased and xlnet-base-cased on the English subset of the training set. 
