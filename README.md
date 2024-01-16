@@ -92,7 +92,7 @@ The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/
 |       generated code       | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
 | CodeLlama-7b-Instruct.cpp | -    | -     | -    | -   |
-| Langchain_CodeLlama.cpp     |  -    | -     | -    | -   |
+| Langchain_CodeLlama-7b.cpp     |  -    | -     | -    | -   |
 | CodeLlama-13b-Instruct.cpp    | + | -     | -    | -   |
 | CodeLlama-34b-Instruct.cpp | + | + | -    | -   |
 | CodeLlama-7b-finetuned.cpp | + | + | + | + |
