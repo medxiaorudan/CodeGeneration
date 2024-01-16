@@ -87,9 +87,13 @@ The fine-tune XLNET for System B:
 ```bash
 python main_B.py --MODEL_CKPT xlnet-base-cased
 ```
+I used [Weights & Biases](https://wandb.ai/site/research?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme) to record the entire fine-tuning training process. The specific report can be viewed [here](https://wandb.ai/medxiaorudan/CodeLlama_finetune_CPP_2?workspace=user-medxiaorudan).
+
+The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned) can be interacted with in Hugging Face 🤗
+
 ### 🔐 Evaluation results
 
-The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned) can be interacted with in Hugging Face 🤗:
+
 
 |              | Accuracy (entity)  | Recall (entity)    | Precision (entity)  | F1 score (entity)  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
