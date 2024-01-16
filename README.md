@@ -89,12 +89,12 @@ The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/
 
 ### 🔐 Evaluation results
 
-
-
-|              | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
+|       generated code       | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
-| BERT+SystemA | 0.9861     | 0.9685     | 0.8699    | 0.9165   |
-| BERT+SystemB     | 0.9922 | 0.9740 | 0.9206 | **0.9466**   |
-| XLNET+SystemA    | 0.9759 | 0.9548 | 0.7967 | 0.8687   |
-| XLNET+SystemB    | 0.9915 | 0.9741 | 0.9145 | 0.9434   |
-
+| CodeLlama-7b-Instruct.cpp | -    | -     | -    | -   |
+| Langchain_CodeLlama.cpp     |  -    | -     | -    | -   |
+| CodeLlama-13b-Instruct.cpp    | + | -     | -    | -   |
+| CodeLlama-34b-Instruct.cpp | + | + | -    | -   |
+| CodeLlama-7b-finetuned.cpp | + | + | + | + |
+| Langchain_GPT3.5_turbo.cpp | + | + | + | + |
+|Langchain_GPT4.cpp | + | + | + | + |
