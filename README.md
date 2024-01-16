@@ -58,16 +58,16 @@ pip install -r requirements.txt
 ### 🤖 Popular dataset for code generation. Ordered by most recent first
 | Name         | Examples                                                | Languages                                                  | ⭐   | Released   |
 |--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
-| HumanEval-X  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
-| CoderEval    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
-| DS-1000      | 1000                                                    | Python                                                     | 146 | 2022-11-18 |
-| MultiPL-E     | "HumanEval" and "MBPP" Python benchmarks, and their translations into other 18 languages. | 19 (include C++ and C)                                   | 108 | 2022-8-17  |
-| XLCoST       | 11198 C++, 11028 Java, 10622 Python, 10735 C#, 9951 JS, 3553 PHP, 574 C | C++, Java, Python, C#, Javascript, PHP, C                | 48  | 2022-6-16  |
-| MBPP         | 974                                                     | Python                                                     | 62  | 2021-8-16  |
-| HumanEval    | 164                                                     | Python                                                     | 1624| 2021-7-17  |
-| APPS         | 10000                                                   | Python                                                     | 316 | 2021-5-20  |
-| CodeXGLUE    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
-| SPoC         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
+| [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x)  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
+| [CoderEval](https://github.com/CodeArtsSnap/CoderEval)    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
+| [DS-1000](https://github.com/xlang-ai/DS-1000)      | 1000                                                    | Python                                                     | 146 | 2022-11-18 |
+| [MultiPL-E](https://huggingface.co/datasets/nuprl/MultiPL-E)     | "HumanEval" and "MBPP" Python benchmarks, and their translations into other 18 languages. | 19 (include C++ and C)                                   | 108 | 2022-8-17  |
+| [XLCoST](https://github.com/reddy-lab-code-research/XLCoST)       | 11198 C++, 11028 Java, 10622 Python, 10735 C#, 9951 JS, 3553 PHP, 574 C | C++, Java, Python, C#, Javascript, PHP, C                | 48  | 2022-6-16  |
+| [MBPP](https://huggingface.co/datasets/mbpp)         | 974                                                     | Python                                                     | 62  | 2021-8-16  |
+| [HumanEval](https://github.com/openai/human-eval)    | 164                                                     | Python                                                     | 1624| 2021-7-17  |
+| [APPS](https://github.com/hendrycks/apps)         | 10000                                                   | Python                                                     | 316 | 2021-5-20  |
+| [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
+| [SPoC](https://github.com/Sumith1896/spoc)         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
 
 ### Run the code
 
