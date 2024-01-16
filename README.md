@@ -38,8 +38,24 @@ You can install the following dependencies to run tasks in the environment:
 pip install -r requirements.txt
 ```
 ### 🚀 Models relevant for code generation. Ordered by most recent first
-
-### 🚀 Popular dataset for code generation. Ordered by most recent first
+```markdown
+| Name                        | Size             | Languages                                       | Organization                | ⭐/ ❤️  | Released  | Open Source |
+|-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
+| Phind CodeLlama v2          | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
+| WizardCoder-Python           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
+| CodeLlama                    | 7/13/34B         | Many                                            | Meta AI                     | 11092  | 2023-8    | Yes         |
+| WizardCoder                  | 15B              | 80+                                             | WizardLM                    | 661    | 2023-6    | Yes         |
+| replit-glaive                | 3B               | Python                                          | Replit                      | 85     | 2023-7    | Yes         |
+| CodeGeeX                     | 13B              | Python, C++, Java, JavaScript, Go                | THUDM                       | 7419   | 2023-5-16 | Yes         |
+| Starcoder                    | 15B              | 80+                                             | Hugging Face and ServiceNow | 6595   | 2023-5    | Yes         |
+| replit-v1-3b                 | 3B               | 20+                                             | Replit                      | 698    | 2023-5    | Yes         |
+| CodeT5+                      | 220M, 770M, 2B, 6B, 16B | Ruby, JavaScript, Go, Python, Java, PHP      | Salesforce                  | 2436   | 2023-5    | Yes         |
+| IBM Watson Code Assistant    | 350M             | Many                                            | IBM                         |         | 2023-5    | No          |
+| SantaCoder                   | 1.1B             | Python, Java, JavaScript                         | Bigcode                     | 305    | 2023-4    | Yes         |
+| InCoder                      | 1.3B, 6B         | 20                                              | Facebook                    | 280    | 2023-4    | Yes         |
+| GPT4                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
+```
+### 🤖 Popular dataset for code generation. Ordered by most recent first
 
 
 ### Run the code
