@@ -7,10 +7,10 @@ CodeGeneration
 <img src="https://github.com/medxiaorudan/CodeGeneration/blob/main/images/CPP.gif" width="700" > 
 </center>
 
-[🤗 MultiNERD Dataset](https://huggingface.co/models?library=span-marker) |
-[🛠️ bert-base-cased model](https://huggingface.co/bert-base-cased) |
-[🛠️ xlnet-base-cased model](https://huggingface.co/xlnet-base-cased) |
-[📄 Paper for Dataset](https://aclanthology.org/2022.findings-naacl.60.pdf) | 
+[🤗 Hugging Face](https://huggingface.co/) |
+[🦜️🔗 langchain](https://huggingface.co/bert-base-cased) |
+[🦙 CodeLlama](https://github.com/facebookresearch/codellama) |
+[🛠️ XLCoST Dataset](https://github.com/reddy-lab-code-research/XLCoST/tree/main) | 
 </div>
 
 LLM_NER_MultiNERD is a Using the MultiNERD Named Entity Recognition (NER) dataset, complete the following instructions to train and 
