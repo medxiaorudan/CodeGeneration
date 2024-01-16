@@ -38,7 +38,7 @@ You can install the following dependencies to run tasks in the environment:
 pip install -r requirements.txt
 ```
 ### 🚀 Models relevant for code generation. Ordered by most recent first
-```markdown
+
 | Name                        | Size             | Languages                                       | Organization                | ⭐/ ❤️  | Released  | Open Source |
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
 | Phind CodeLlama v2          | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 | SantaCoder                   | 1.1B             | Python, Java, JavaScript                         | Bigcode                     | 305    | 2023-4    | Yes         |
 | InCoder                      | 1.3B, 6B         | 20                                              | Facebook                    | 280    | 2023-4    | Yes         |
 | GPT4                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
-```
+
 ### 🤖 Popular dataset for code generation. Ordered by most recent first
 
 
