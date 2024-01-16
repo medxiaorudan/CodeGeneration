@@ -11,7 +11,7 @@ CodeGeneration
 [🦜️🔗 langchain](https://huggingface.co/bert-base-cased) |
 [🦙 CodeLlama](https://github.com/facebookresearch/codellama) |
 [🛠️ XLCoST Dataset](https://github.com/reddy-lab-code-research/XLCoST/tree/main) | 
-[🔥 PyTorch] (https://github.com/pytorch/pytorch) | 
+[🔥 PyTorch](https://github.com/pytorch/pytorch) | 
 </div>
 
 
