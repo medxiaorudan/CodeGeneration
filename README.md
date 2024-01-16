@@ -91,7 +91,7 @@ The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/
 
 
 
-|              | Accuracy (entity)  | Recall (entity)    | Precision (entity)  | F1 score (entity)  |
+|              | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
 | BERT+SystemA | 0.9861     | 0.9685     | 0.8699    | 0.9165   |
 | BERT+SystemB     | 0.9922 | 0.9740 | 0.9206 | **0.9466**   |
