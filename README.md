@@ -52,7 +52,7 @@ pip install -r requirements.txt
 | [GPT4](https://openai.com/gpt-4)                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
 
 ### 🤖 Popular datasets for code generation (ordered by most recent first). 
-| Name         | Examples                                                | Languages                                                  | ⭐   | Released   |
+| Name         | Examples                                                | Languages                                               | ⭐/ ❤️  | Released   |
 |--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
 | [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x)  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
 | [CoderEval](https://github.com/CodeArtsSnap/CoderEval)    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
