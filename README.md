@@ -69,7 +69,7 @@ pip install -r requirements.txt
 | [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
 | [SPoC](https://github.com/Sumith1896/spoc)         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
 
-### Run the code
+### 🎉 Run the code
 
 The fine-tune BERT for System A:
 ```bash
@@ -87,9 +87,9 @@ The fine-tune XLNET for System B:
 ```bash
 python main_B.py --MODEL_CKPT xlnet-base-cased
 ```
-### Evaluation results
+### 🔐 Evaluation results
 
-The overall performance of BERT and XLNET on **dev** (The more detailed results about validation and visualization can be found in [Notebooks](https://github.com/medxiaorudan/LLM_NER_MultiNERD/tree/main/Notebooks):
+The fine-tuned CodeLlama model can be interacted with in [Hugging Face](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned):
 
 |              | Accuracy (entity)  | Recall (entity)    | Precision (entity)  | F1 score (entity)  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
