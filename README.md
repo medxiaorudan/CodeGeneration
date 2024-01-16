@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 ### 🚀 Models relevant for code generation (ordered by most recent first). 
 
-| Name                        | Size             | Languages                                       | Organization                | ⭐/ ❤️  | Released  | Open Source |
+| Name                        | Size             | Languages                                       | Organization                | ⭐/❤️  | Released  | Open Source |
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
 | [Phind CodeLlama v2](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)         | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
 | [WizardCoder-Python](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 | [GPT4](https://openai.com/gpt-4)                         | 700B (not sure)  | Many                                            | OpenAI                      |         | 2023-3    | No          |
 
 ### 🤖 Popular datasets for code generation (ordered by most recent first). 
-| Name         | Examples                                                | Languages                                               | ⭐/ ❤️  | Released   |
+| Name         | Examples                                                | Languages                                               | ⭐/❤️  | Released   |
 |--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
 | [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x)  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
 | [CoderEval](https://github.com/CodeArtsSnap/CoderEval)    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
