@@ -15,10 +15,6 @@ CodeGeneration
 [🐞 Catch2](https://github.com/catchorg/Catch2) 
 </div>
 
-1. finetune wandb 实时观测
-2. 微调后的模型建hugging face
-3. 模型和数据集
-4. 
 ## 🎨 Instructions:
 C++ code generation using a pre-trained model. Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input. Leverage a pre-trained code model to generate the C++ code based on specific prompts.
 
