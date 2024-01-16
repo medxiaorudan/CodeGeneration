@@ -89,7 +89,7 @@ python main_B.py --MODEL_CKPT xlnet-base-cased
 ```
 ### 🔐 Evaluation results
 
-The fine-tuned CodeLlama model can be interacted with in [Hugging Face](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned):
+The fine-tuned CodeLlama model(codellama/CodeLlama_CPP_FineTuned) can be interacted with in [Hugging Face](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned):
 
 |              | Accuracy (entity)  | Recall (entity)    | Precision (entity)  | F1 score (entity)  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
