@@ -33,15 +33,33 @@ pipeline = transformers.pipeline(
 )
 
 # Code Llama sequences generation
-system = "Provide answers in C++"
-prompt = f"<s>[INST] <<SYS>>\n{system1}\n<</SYS>> \
+system1 = "Provide answers in C++"
+prompt1 = f"<s>[INST] <<SYS>>\n{system1}\n<</SYS>> \
 Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
 <s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. [/INST] </s> \
 <s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST] \
 "
 
+system2 = "Provide answers in C++"
+prompt2 = R"(<s>[INST] <<SYS>>\n{system}\n<</SYS>> \
+Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
+<s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. \
+Include error handling to handle non-numeric inputs and provide a message to the user when exiting the program. \
+Use a suitable data structure (e.g., std::vector or std::list) to efficiently store and manage the user input records. \
+Implement a function to display the sorted user input records with timestamps. \
+</s> \
+<s>[INST] Enhance the program to display timestamps along with the sorted user inputs. \
+Use the C++ standard library (e.g., std::chrono) for handling timestamps. \
+Ensure that the timestamp is updated each time a new user input is added. \
+Provide proper formatting for the timestamp in the output. \
+)"
+ 
+system3 = "Provide answers in C++"
+user3 = "Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input."
+prompt3 = f"<s><<SYS>>\n{system3}\n<</SYS>>\n\n{user3}"
+
 sequences_7b = pipeline(
-    prompt,
+    prompt1,
     do_sample=True,
     top_k=10,
     temperature=0.1,
