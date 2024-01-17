@@ -71,7 +71,7 @@ pip install -r requirements.txt
 ```bash
 python Prompt_Engineering.py
 ```
-- **You can fine-tune the CodeLlama model with the Lora method with this command:**
+- **You can fine-tune the CodeLlama model with the Lora method by this command:**
 ```bash
 python Finetune_CodeLlama.py
 ```
