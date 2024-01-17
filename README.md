@@ -88,7 +88,7 @@ I used [Weights & Biases](https://wandb.ai/site/research?utm_source=github&utm_m
 The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned) can be interacted with in Hugging Face 🤗
 
 ### 🔐 Evaluation results
-I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code correctness verification.
+I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code snippets correctness verification.
 
 |       generated code       | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
