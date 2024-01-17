@@ -89,10 +89,16 @@ I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for g
 
 |       generated code       | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
-| CodeLlama-7b-Instruct.cpp | -    | -     | -    | -   |
+| CodeLlama-7b-Instruct-prompt1.cpp | -    | -     | -    | -   |
+| CodeLlama-7b-Instruct-prompt2.cpp | -    | -     | -    | -   |
+| CodeLlama-7b-Instruct-prompt3.cpp | -    | -     | -    | -   |
 | Langchain_CodeLlama-7b.cpp     |  -    | -     | -    | -   |
-| CodeLlama-13b-Instruct.cpp    | + | -     | -    | -   |
-| CodeLlama-34b-Instruct.cpp | + | + | -    | -   |
+| CodeLlama-13b-Instruct-prompt1.cpp    | + | -     | -    | -   |
+| CodeLlama-13b-Instruct-prompt2.cpp    | - | -     | -    | -   |
+| CodeLlama-13b-Instruct-prompt2.cpp    | + | -     | -    | -   |
+| CodeLlama-34b-Instruct-prompt1.cpp | + | + | -    | -   |
+| CodeLlama-34b-Instruct-prompt2.cpp | - | - | -    | -   |
+| CodeLlama-34b-Instruct-prompt3.cpp | + | - | -    | -   |
 | CodeLlama-7b-finetuned.cpp | + | + | + | + |
 | Langchain_GPT3.5_turbo.cpp | + | + | + | + |
 |Langchain_GPT4.cpp | + | + | + | + |
