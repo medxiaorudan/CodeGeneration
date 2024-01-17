@@ -105,21 +105,25 @@ llm = LlamaCpp(
 )
 
 default_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
+print("CodeLlama with LangChain Result:")
 default_chain.run(prompt=question)
 
 # LangChain with gpt-3.5-turbo
 llm_gpt_turbo = ChatOpenAI(temperature=0.3, model_name="gpt-3.5-turbo")
 default_chain_gpt_turbo = LLMChain(llm=llm_gpt_turbo, prompt=prompt, verbose=True)
+print("LangChain with gpt-3.5-turbo Result:")
 default_chain_gpt_turbo.run(prompt=question)
 
 # SmartChain with gpt-3.5-turbo
 chain_gpt_turbo_smart = SmartLLMChain(llm=llm_gpt_turbo, prompt=prompt, n_ideas=3, verbose=True)
+print("SmartChain with gpt-3.5-turbo Result:")
 chain_gpt_turbo_smart.run({})
 
 # SmartChain with gpt-3.5-turbo and GPT-4
 llm_gpt_turbo_ideation = ChatOpenAI(temperature=0.9, model_name="gpt-3.5-turbo")
 llm_gpt_4 = ChatOpenAI(temperature=0, model_name="gpt-4")
 chain_gpt_turbo_gpt_4_smart = SmartLLMChain(ideation_llm=llm_gpt_turbo_ideation, llm=llm_gpt_4, prompt=prompt, n_ideas=3, verbose=True)
+print("SmartChain with gpt-3.5-turbo and GPT-4 Result:")
 chain_gpt_turbo_gpt_4_smart.run({})
 
 # SmartChain with GPT-4
@@ -134,4 +138,6 @@ chain_gpt_4_smart = SmartLLMChain(
     n_ideas=3,
     verbose=True
 )
+print("SmartChain with GPT-4 Result:")
 chain_gpt_4_smart.run({})
+
