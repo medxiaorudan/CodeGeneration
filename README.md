@@ -92,7 +92,7 @@ I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for g
 | CodeLlama-7b-Instruct-prompt1.cpp | **-**    | **-**     | **-**    | **-**   |
 | CodeLlama-7b-Instruct-prompt2.cpp | **-**    | **-**     | **-**    | **-**   |
 | CodeLlama-7b-Instruct-prompt3.cpp | **-**    | **-**     | **-**    | **-**   |
-| Langchain_CodeLlama-7b.cpp     |  **-**    | **-**     | **-**    | **-**   |
+| Langchain_CodeLlama-13b.cpp     |  **-**    | **-**     | **-**    | **-**   |
 | CodeLlama-13b-Instruct-prompt1.cpp    | **+** | **-**     | **-**    | **-**   |
 | CodeLlama-13b-Instruct-prompt2.cpp    | **-** | **-**     | **-**    | **-**   |
 | CodeLlama-13b-Instruct-prompt3.cpp    | **+** | **-**     | **-**    | **-**   |
