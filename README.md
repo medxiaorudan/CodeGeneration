@@ -65,13 +65,13 @@ pip install -r requirements.txt
 | [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
 | [SPoC](https://github.com/Sumith1896/spoc)         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
 
-### 🎉 Run the code
+### 🎉 Run the code 
 
-You can try this command to try different prompts and models for C++ code generation:
+-**You can try this command to try different prompts and models for C++ code generation:**
 ```bash
 python Prompt_Engineering.py
 ```
-You can fine-tune the CodeLlama model with the Lora method with this command:
+-**You can fine-tune the CodeLlama model with the Lora method with this command:**
 ```bash
 python Finetune_CodeLlama.py
 ```
@@ -79,13 +79,10 @@ In this script, I used [Weights & Biases](https://wandb.ai/site/research?utm_sou
 
 The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned) can be interacted with in Hugging Face 🤗
 
-You can try this command to verification the generated C++ code snippets:
+-**You can try this command to verify the generated C++ code snippet:**
 ```bash
 g++ -o evaluate evaluate.cpp -std=c++11 -Wall -I path/to/catch2 ./tests
 ```
-
-
-
 
 ### 🔐 Evaluation results
 I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code snippets correctness verification.
