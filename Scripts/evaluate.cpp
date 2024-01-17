@@ -213,7 +213,7 @@ TEST_CASE("Test CodeLlama-7b-Instruct-prompt3.cpp", "[CodeLlama-7b-Instruct-prom
 }
 
 // No compile
-TEST_CASE("Test Langchain_CodeLlama-7b.cpp", "[Langchain_CodeLlama-7b]") {
-    runTest("Langchain_CodeLlama-7b.cpp");
+TEST_CASE("Test Langchain_CodeLlama-13b.cpp", "[Langchain_CodeLlama-13b]") {
+    runTest("Langchain_CodeLlama-13b.cpp");
 }
 

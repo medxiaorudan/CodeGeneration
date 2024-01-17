@@ -22,15 +22,36 @@ import os
 with open("/content/drive/MyDrive/Key.txt", "r") as f:
     os.environ["OPENAI_API_KEY"] = f.read()
 
-# Loading CodeLlama model
-model = "codellama/CodeLlama-7b-Instruct-hf"
-tokenizer = AutoTokenizer.from_pretrained(model)
-pipeline = transformers.pipeline(
-    "text-generation",
-    model=model,
-    torch_dtype=torch.float16,
-    device_map="auto",
-)
+def generate_sequences(model_name, prompt):
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    pipeline = transformers.pipeline(
+        "text-generation",
+        model=model_name,
+        torch_dtype=torch.float16,
+        device_map="auto",
+    )
+
+    sequences = pipeline(
+        prompt,
+        do_sample=True,
+        top_k=10,
+        temperature=0.1,
+        top_p=0.95,
+        num_return_sequences=1,
+        eos_token_id=tokenizer.eos_token_id,
+        max_length=2000,
+        add_special_tokens=False
+    )
+
+    return sequences
+
+def print_sequences(model_name, prompt_name, sequences):
+    for seq in sequences:
+        print(f"{model_name} - {prompt_name} Result: {seq['generated_text']}")
+
+
+# Example usage with different models and prompts
+model_names = ["codellama/CodeLlama-7b-Instruct-hf", "codellama/CodeLlama-13b-Instruct-hf", "codellama/CodeLlama-34b-Instruct-hf"]
 
 # Code Llama sequences generation
 system1 = "Provide answers in C++"
@@ -58,37 +79,31 @@ system3 = "Provide answers in C++"
 user3 = "Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input."
 prompt3 = f"<s><<SYS>>\n{system3}\n<</SYS>>\n\n{user3}"
 
-sequences_7b = pipeline(
-    prompt1,
-    do_sample=True,
-    top_k=10,
-    temperature=0.1,
-    top_p=0.95,
-    num_return_sequences=1,
-    eos_token_id=tokenizer.eos_token_id,
-    max_length=2000,
-    add_special_tokens=False
-)
+for model_name in model_names:
+    sequences_prompt1 = generate_sequences(model_name, prompt1)
+    sequences_prompt2 = generate_sequences(model_name, prompt2)
+    sequences_prompt3 = generate_sequences(model_name, prompt3)
 
-# Print Code Llama generated sequences
-for seq in sequences_7b:
-    print(f"Result: {seq['generated_text']}")
+    print_sequences(model_name, "prompt1", sequences_prompt1)
+    print_sequences(model_name, "prompt2", sequences_prompt2)
+    print_sequences(model_name, "prompt3", sequences_prompt3)
 
-# Initializing LangChain and CodeLlama
+
+# CodeLlama with LangChain
+question = "Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. Ensure the program sorts the user inputs in ascending order based on the provided numeric input. Enhance the program to display timestamps along with the sorted user inputs."
+prompt = PromptTemplate.from_template(question)
+
 callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 llm = LlamaCpp(
     model_path="/srv/users/rudxia/Developer_MICCAI/CodeLlama/model/codellama-13b-instruct.Q3_K_M.gguf",
     n_ctx=100000,
     n_gpu_layers=1,
     n_batch=512,
-    f16_kv=False,
+    f16_kv=False,  # MUST set to True, otherwise you will run into problem after a couple of calls
     callback_manager=callback_manager,
     verbose=True,
 )
 
-# CodeLlama with LangChain
-question = "Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. Ensure the program sorts the user inputs in ascending order based on the provided numeric input. Enhance the program to display timestamps along with the sorted user inputs."
-prompt = PromptTemplate.from_template(question)
 default_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
 default_chain.run(prompt=question)
 
