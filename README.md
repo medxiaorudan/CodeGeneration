@@ -67,25 +67,25 @@ pip install -r requirements.txt
 
 ### 🎉 Run the code
 
-The fine-tune BERT for System A:
+You can try this command to try different prompts and models for C++ code generation:
 ```bash
-python main_A.py --MODEL_CKPT bert-base-cased
+python Prompt_Engineering.py
 ```
-The fine-tune BERT for System B:
+You can fine-tune the CodeLlama model with the Lora method with this command:
 ```bash
-python main_B.py --MODEL_CKPT bert-base-cased
+python Finetune_CodeLlama.py
 ```
-The fine-tune XLNET for System A:
-```bash
-python main_A.py --MODEL_CKPT xlnet-base-cased
-```
-The fine-tune XLNET for System B:
-```bash
-python main_B.py --MODEL_CKPT xlnet-base-cased
-```
-I used [Weights & Biases](https://wandb.ai/site/research?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme) to record the entire fine-tuning training process. The tracking and visualization report can be viewed [here](https://wandb.ai/medxiaorudan/CodeLlama_finetune_CPP?workspace=user-medxiaorudan).
+In this script, I used [Weights & Biases](https://wandb.ai/site/research?utm_source=github&utm_medium=code&utm_campaign=wandb&utm_content=readme) to record the entire fine-tuning training process. The tracking and visualization report of my example can be viewed [here](https://wandb.ai/medxiaorudan/CodeLlama_finetune_CPP?workspace=user-medxiaorudan).
 
 The fine-tuned CodeLlama model [CodeLlama_CPP_FineTuned](https://huggingface.co/medxiaorudan/CodeLlama_CPP_FineTuned) can be interacted with in Hugging Face 🤗
+
+You can try this command to verification the generated C++ code snippets:
+```bash
+g++ -o evaluate evaluate.cpp -std=c++11 -Wall -I path/to/catch2 ./tests
+```
+
+
+
 
 ### 🔐 Evaluation results
 I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code snippets correctness verification.
