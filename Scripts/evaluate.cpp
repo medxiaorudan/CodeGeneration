@@ -157,30 +157,63 @@ TEST_CASE("Test Langchain_GPT4.cpp", "[Langchain_GPT4]") {
     runTest("Langchain_GPT4.cpp");
 }
 
-// No timestamps
-TEST_CASE("Test CodeLlama-34b-Instruct.cpp", "[CodeLlama-34b-Instruct]") {
-    runTest("CodeLlama-34b-Instruct.cpp");
-}
 
 TEST_CASE("Test Langchain_GPT3.5_turbo.cpp", "[Langchain_GPT3.5_turbo]") {
     runTest("Langchain_GPT3.5_turbo.cpp");
 }
 
+
 TEST_CASE("Test CodeLlama-7b-finetuned.cpp", "[CodeLlama-7b-finetuned]") {
     runTest("CodeLlama-7b-finetuned.cpp");
 }
 
-// No compile
-TEST_CASE("Test CodeLlama-7b-Instruct.cpp", "[CodeLlama-7b-Instruct]") {
-    runTest("CodeLlama-7b-Instruct.cpp");
+// No timestamps
+TEST_CASE("Test CodeLlama-34b-Instruct-prompt1.cpp", "[CodeLlama-34b-Instruct-prompt1]") {
+    runTest("CodeLlama-34b-Instruct-prompt1.cpp");
 }
 
 // No compile
-TEST_CASE("Test Langchain_CodeLlama.cpp", "[Langchain_CodeLlama]") {
-    runTest("Langchain_CodeLlama.cpp");
+TEST_CASE("Test CodeLlama-34b-Instruct-prompt2.cpp", "[CodeLlama-34b-Instruct-prompt2]") {
+    runTest("CodeLlama-34b-Instruct-prompt2.cpp");
 }
 
 // Can't exit
-TEST_CASE("Test CodeLlama-13b-Instruct.cpp", "[CodeLlama-13b-Instruct]") {
-    runTest("CodeLlama-13b-Instruct.cpp");
+TEST_CASE("Test CodeLlama-34b-Instruct-prompt3.cpp", "[CodeLlama-34b-Instruct-prompt3]") {
+    runTest("CodeLlama-34b-Instruct-prompt3.cpp");
 }
+
+// Can't exit
+TEST_CASE("Test CodeLlama-13b-Instruct-prompt1.cpp", "[CodeLlama-13b-Instruct-prompt1]") {
+    runTest("CodeLlama-13b-Instruct-prompt1.cpp");
+}
+
+// No compile
+TEST_CASE("Test CodeLlama-13b-Instruct-prompt2.cpp", "[CodeLlama-13b-Instruct-prompt2]") {
+    runTest("CodeLlama-13b-Instruct-prompt2.cpp");
+}
+
+// Can't exit
+TEST_CASE("Test CodeLlama-13b-Instruct-prompt3.cpp", "[CodeLlama-13b-Instruct-prompt3]") {
+    runTest("CodeLlama-13b-Instruct-prompt3.cpp");
+}
+
+// No compile
+TEST_CASE("Test CodeLlama-7b-Instruct-prompt1.cpp", "[CodeLlama-7b-Instruct-prompt1]") {
+    runTest("CodeLlama-7b-Instruct-prompt1.cpp");
+}
+
+// No compile
+TEST_CASE("Test CodeLlama-7b-Instruct-prompt2.cpp", "[CodeLlama-7b-Instruct-prompt2]") {
+    runTest("CodeLlama-7b-Instruct-prompt2.cpp");
+}
+
+// No compile
+TEST_CASE("Test CodeLlama-7b-Instruct-prompt3.cpp", "[CodeLlama-7b-Instruct-prompt3]") {
+    runTest("CodeLlama-7b-Instruct-prompt3.cpp");
+}
+
+// No compile
+TEST_CASE("Test Langchain_CodeLlama-7b.cpp", "[Langchain_CodeLlama-7b]") {
+    runTest("Langchain_CodeLlama-7b.cpp");
+}
+
