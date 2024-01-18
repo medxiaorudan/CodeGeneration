@@ -162,9 +162,12 @@ TEST_CASE("Test Langchain_GPT3.5_turbo.cpp", "[Langchain_GPT3.5_turbo]") {
     runTest("Langchain_GPT3.5_turbo.cpp");
 }
 
+TEST_CASE("Test CodeLlama-7b-finetuned-prompt1.cpp", "[CodeLlama-7b-finetuned-prompt1]") {
+    runTest("CodeLlama-7b-finetuned-prompt1.cpp");
+}
 
-TEST_CASE("Test CodeLlama-7b-finetuned.cpp", "[CodeLlama-7b-finetuned]") {
-    runTest("CodeLlama-7b-finetuned.cpp");
+TEST_CASE("Test CodeLlama-7b-finetuned-prompt2.cpp", "[CodeLlama-7b-finetuned-prompt2]") {
+    runTest("CodeLlama-7b-finetuned-prompt2.cpp");
 }
 
 // No timestamps
