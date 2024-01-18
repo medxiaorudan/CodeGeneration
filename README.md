@@ -87,7 +87,7 @@ g++ -o evaluate evaluate.cpp -std=c++11 -Wall -I path/to/catch2 ./tests
 ### 🔐 Evaluation results
 I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code snippets correctness verification.
 
-|       generated code       | can compile  | can exit    | have record of time stamps  | input number in ascending order  |
+|       generated code       | can compile  | can exit    | input number in ascending order  | have record of time stamps  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
 | CodeLlama-7b-Instruct-prompt1.cpp | **-**    | **-**     | **-**    | **-**   |
 | CodeLlama-7b-Instruct-prompt2.cpp | **-**    | **-**     | **-**    | **-**   |
@@ -101,7 +101,7 @@ I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for g
 | CodeLlama-34b-Instruct-prompt2.cpp | **-** | **-** | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt3.cpp | **+** | **-**| **-**    | **-**   |
 | CodeLlama-7b-finetuned-prompt1.cpp | **+** | **+** | **+** | **+** |
-| CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **+** |
+| CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **-** |
 | Langchain_GPT3.5_turbo-prompt1.cpp | **+** | **+** | **+** | **+** |
 | Langchain_GPT3.5_turbo-prompt2.cpp | **+** | **+** | **+** | **+** |
 |Langchain_GPT4-prompt1.cpp | **+** | **+** | **+** | **+** |
