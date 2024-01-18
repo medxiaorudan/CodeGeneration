@@ -99,6 +99,7 @@ I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for g
 | CodeLlama-34b-Instruct-prompt1.cpp | **+** | **+** | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt2.cpp | **-** | **-** | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt3.cpp | **+** | **-**| **-**    | **-**   |
-| CodeLlama-7b-finetuned.cpp | **+** | **+** | **+** | **+** |
+| CodeLlama-7b-finetuned-prompt1.cpp | **+** | **+** | **+** | **+** |
+| CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **+** |
 | Langchain_GPT3.5_turbo.cpp | **+** | **+** | **+** | **+** |
 |Langchain_GPT4.cpp | **+** | **+** | **+** | **+** |
