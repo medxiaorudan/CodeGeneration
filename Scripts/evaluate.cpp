@@ -153,21 +153,16 @@ void runTest(const std::string& programPath) {
     REQUIRE(isAscending);
 }
 
-TEST_CASE("Test Langchain_GPT4.cpp", "[Langchain_GPT4]") {
-    runTest("Langchain_GPT4.cpp");
+TEST_CASE("Test Langchain_GPT4-prompt1.cpp", "[Langchain_GPT4-prompt1]") {
+    runTest("Langchain_GPT4-prompt1.cpp");
 }
 
-
-TEST_CASE("Test Langchain_GPT3.5_turbo.cpp", "[Langchain_GPT3.5_turbo]") {
-    runTest("Langchain_GPT3.5_turbo.cpp");
+TEST_CASE("Test Langchain_GPT3.5_turbo-prompt1.cpp", "[Langchain_GPT3.5_turbo-prompt1]") {
+    runTest("Langchain_GPT3.5_turbo-prompt1.cpp");
 }
 
 TEST_CASE("Test CodeLlama-7b-finetuned-prompt1.cpp", "[CodeLlama-7b-finetuned-prompt1]") {
     runTest("CodeLlama-7b-finetuned-prompt1.cpp");
-}
-
-TEST_CASE("Test CodeLlama-7b-finetuned-prompt2.cpp", "[CodeLlama-7b-finetuned-prompt2]") {
-    runTest("CodeLlama-7b-finetuned-prompt2.cpp");
 }
 
 // No timestamps
@@ -216,7 +211,23 @@ TEST_CASE("Test CodeLlama-7b-Instruct-prompt3.cpp", "[CodeLlama-7b-Instruct-prom
 }
 
 // No compile
-TEST_CASE("Test Langchain_CodeLlama-13b.cpp", "[Langchain_CodeLlama-13b]") {
-    runTest("Langchain_CodeLlama-13b.cpp");
+TEST_CASE("Test Langchain_CodeLlama-13b-prompt1.cpp", "[Langchain_CodeLlama-13b-prompt1]") {
+    runTest("Langchain_CodeLlama-13b-prompt1.cpp");
 }
 
+// No compile
+TEST_CASE("Test Langchain_CodeLlama-13b-prompt2.cpp", "[Langchain_CodeLlama-13b-prompt2]") {
+    runTest("Langchain_CodeLlama-13b.cpp-prompt2");
+}
+
+TEST_CASE("Test Langchain_GPT4-prompt2.cpp", "[Langchain_GPT4-prompt2]") {
+    runTest("Langchain_GPT4-prompt2.cpp");
+}
+
+TEST_CASE("Test Langchain_GPT3.5_turbo-prompt2.cpp", "[Langchain_GPT3.5_turbo-prompt2]") {
+    runTest("Langchain_GPT3.5_turbo-prompt2.cpp");
+}
+
+TEST_CASE("Test CodeLlama-7b-finetuned-prompt2.cpp", "[CodeLlama-7b-finetuned-prompt2]") {
+    runTest("CodeLlama-7b-finetuned-prompt2.cpp");
+}
