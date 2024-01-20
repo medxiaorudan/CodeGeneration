@@ -54,14 +54,13 @@ def print_sequences(model_name, prompt_name, sequences):
 model_names = ["codellama/CodeLlama-7b-Instruct-hf", "codellama/CodeLlama-13b-Instruct-hf", "codellama/CodeLlama-34b-Instruct-hf"]
 
 # Code Llama sequences generation
-system1 = "Provide answers in C++"
-prompt1 = f"<s>[INST] <<SYS>>\n{system1}\n<</SYS>> \
+
+prompt1 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>> \
 Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
 <s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. [/INST] </s> \
 <s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST] \
 "
 
-system2 = "Provide answers in C++"
 prompt2 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>> \
 Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
 <s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. \
@@ -74,9 +73,9 @@ Use the C++ standard library (e.g., td::chrono::system_clock) for handling times
 Ensure that the timestamp is updated each time a new user input is added. \
 Provide proper formatting for the timestamp in the output."
  
-system3 = "Provide answers in C++"
-user3 = "Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input."
-prompt3 = f"<s><<SYS>>\n{system3}\n<</SYS>>\n\n{user3}"
+prompt3 = f"<s><<SYS>>\nProvide answers in C++\n<</SYS>> \
+Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. \
+The record should be sorted in ascending order based on the provided input."
 
 for model_name in model_names:
     sequences_prompt1 = generate_sequences(model_name, prompt1)
