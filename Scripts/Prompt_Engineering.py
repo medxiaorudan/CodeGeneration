@@ -55,7 +55,7 @@ model_names = ["codellama/CodeLlama-7b-Instruct-hf", "codellama/CodeLlama-13b-In
 
 # Code Llama sequences generation
 
-prompt1 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>> \
+prompt1 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n[/INST] <</SYS>> \
 Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
 <s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. [/INST] </s> \
 <s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST] \
