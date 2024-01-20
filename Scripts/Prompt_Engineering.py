@@ -56,8 +56,8 @@ model_names = ["codellama/CodeLlama-7b-Instruct-hf", "codellama/CodeLlama-13b-In
 # Code Llama sequences generation
 
 prompt1 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>> \
-Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. [/INST] </s> \
-<s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. [/INST] </s> \
+Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. </s> \
+<s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. </s> \
 <s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST] \
 "
 
@@ -71,7 +71,7 @@ Implement a function to display the sorted user input records with timestamps. \
 <s>[INST] Enhance the program to display timestamps along with the sorted user inputs. \
 Use the C++ standard library (e.g., td::chrono::system_clock) for handling timestamps. \
 Ensure that the timestamp is updated each time a new user input is added. \
-Provide proper formatting for the timestamp in the output."
+Provide proper formatting for the timestamp in the output. [/INST]"
  
 prompt3 = f"<s><<SYS>>\nProvide answers in C++\n<</SYS>> \
 Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. \
