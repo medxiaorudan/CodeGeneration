@@ -6,6 +6,12 @@ Created on Wed Jan 17 12:10:12 2024
 """
 
 # Importing necessary libraries
+# !pip install git+https://github.com/huggingface/transformers.git@refs/pull/25740/head accelerate
+# !pip install -U llama-cpp-python
+# !pip install openai tiktoken chromadb langchain
+# !pip install langchain_experimental
+# !pip install transformers==4.33.0
+
 from transformers import AutoTokenizer
 import transformers
 import torch
