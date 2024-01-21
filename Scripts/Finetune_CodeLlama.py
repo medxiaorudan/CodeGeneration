@@ -35,7 +35,7 @@ def tokenize(prompt):
 
 def generate_and_tokenize_prompt(data_point):
     full_prompt =f"""
-Use the Task below and write the Response, which is a programming code that can solve the Task.
+You are a powerful C++ code generation model. You can use the Task below and write the Response, which is a programming code that can solve the Task.
 
 ### Task:
 {data_point["text"]}
@@ -160,7 +160,7 @@ model = PeftModel.from_pretrained(model, "/srv/users/rudxia/Developer_MICCAI/Cod
 
 # Test with the same prompts as before
 eval_prompt = """
-Use the Task below and write the Response, which is a programming code that can solve the Task.
+You are a powerful C++ code generation model. You can use the Task below and write the Response, which is a programming code that can solve the Task.
 ### Task:
 Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. Ensure the program sorts the user inputs in ascending order based on the provided numeric input. Enhance the program to display timestamps along with the sorted user inputs.
 ### Response:
