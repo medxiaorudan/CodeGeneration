@@ -1,6 +1,6 @@
 # Key Impacts on Code Generation:
 
-## Prompts Design Enhancement:
+## Prompts Design:
 - The incorporation of phrases like "You are a powerful XXX model. You can do XX." during the training of large language models plays a pivotal role in guiding the model towards better understanding and execution of tasks. These phrases serve as contextual cues, aiding the model in comprehending user requests and generating more accurate responses. This approach not only molds the model's behavior to align with user expectations but also enhances its controllability and usability, making it well-suited for specific tasks or application scenarios.
 
 In contrast, without such guidance, the model may generate more random text outputs, lacking explicit instructions. This can lead to outputs that lack consistency and fail to meet user expectations. Including these descriptive phrases improves the overall effectiveness of the model.
