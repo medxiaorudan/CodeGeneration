@@ -89,7 +89,7 @@ The generated code with different prompts, tools, and models can be found [here]
 
 I use the [Catch2](https://github.com/catchorg/Catch2) unit test framework for generated C++ code snippets correctness verification.
 
-We have identified several key factors influencing code generation, yet the precision and applicability of generated code still encounter certain limitations. To address these challenges, it is imperative to explore avenues for standardized coding practices, with options like deductive formal verification presenting viable solutions. I have encapsulated the core findings of this code generation project, providing a comprehensive summary, which can be accessed [here](https://github.com/medxiaorudan/CodeGeneration/tree/main/Generated_Code#readme).
+We have identified several key factors influencing code generation, However, the precision and applicability of generated code still encounter certain limitations. To address these challenges, it is imperative to explore standardized coding practices, with options like deductive formal verification presenting viable solutions. I have encapsulated the core findings of this code generation project, providing a summary, which can be accessed [here](https://github.com/medxiaorudan/CodeGeneration/tree/main/Generated_Code#readme).
 
 |       generated code       | can compile  | can exit    | input number in ascending order  | have record of time stamps  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
