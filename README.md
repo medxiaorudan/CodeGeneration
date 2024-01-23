@@ -102,8 +102,8 @@ We have identified several key factors influencing code generation, However, the
 | CodeLlama-34b-Instruct-prompt1.cpp | **+** | **+** | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt2.cpp | **-** | **-** | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt3.cpp | **+** | **-**| **-**    | **-**   |
-| CodeLlama-7b-finetuned-prompt1.cpp | **+** | **+** | **+** | **+** |
-| CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **-** |
+| CodeLlama-7b-finetuned-prompt1.cpp | **+** | **+** | **+** | **-** |
+| CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **+** |
 | Langchain_GPT3.5_turbo-prompt1.cpp | **+** | **+** | **+** | **+** |
 | Langchain_GPT3.5_turbo-prompt2.cpp | **+** | **+** | **+** | **+** |
 |Langchain_GPT4-prompt1.cpp | **+** | **+** | **+** | **+** |
