@@ -3,41 +3,20 @@
 #include <algorithm>
 #include <ctime>
 
-using namespace std;
-
-struct Record
-{
-    int input;
-    time_t timestamp;
-};
-
 int main()
 {
-    vector<Record> records;
-
-    while(true)
+    std::vector<std::pair<int, std::string>> user_inputs;
+    int input;
+    std::string timestamp;
+    while (std::cin >> input)
     {
-        int input;
-        cout << "Enter a number: ";
-        cin >> input;
-
-        if(input == 0)
-            break;
-
-        Record record;
-        record.input = input;
-        record.timestamp = time(0);
-        records.push_back(record);
+        timestamp = std::to_string(std::time(nullptr));
+        user_inputs.push_back(std::make_pair(input, timestamp));
     }
-
-    sort(records.begin(), records.end(), [](const Record& r1, const Record& r2) {
-        return r1.input < r2.input;
-    });
-
-    for(auto& record : records)
+    std::sort(user_inputs.begin(), user_inputs.end());
+    for (auto &input : user_inputs)
     {
-        cout << record.input << " " << ctime(&record.timestamp) << endl;
+        std::cout << input.first << " " << input.second << std::endl;
     }
-
     return 0;
 }

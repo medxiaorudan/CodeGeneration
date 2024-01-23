@@ -1,31 +1,31 @@
 #include <iostream>
+#include <string>
 #include <vector>
-#include <chrono>
+#include <algorithm>
+#include <ctime>
+
+using namespace std;
 
 int main() {
-  std::vector<int> inputs;
-  std::vector<std::pair<int, std::chrono::time_point<std::chrono::system_clock>>> sorted_inputs;
+    vector<string> userInputs;
+    vector<time_t> timestamps;
 
-  // Get user inputs
-  while (true) {
-    int input;
-    std::cout << "Enter a number (or 0 to exit): ";
-    std::cin >> input;
-    if (input == 0) {
-      break;
+    // Get user inputs and timestamps
+    for (int i = 0; i < 5; i++) {
+        string input;
+        cin >> input;
+        userInputs.push_back(input);
+        timestamps.push_back(time(0));
     }
-    inputs.push_back(input);
-  }
 
-  // Sort inputs
-  for (int input : inputs) {
-    sorted_inputs.push_back(std::make_pair(input, std::chrono::system_clock::now()));
-  }
+    // Sort user inputs and timestamps
+    sort(userInputs.begin(), userInputs.end());
+    sort(timestamps.begin(), timestamps.end());
 
-  // Display sorted inputs with timestamps
-  for (auto& input : sorted_inputs) {
-    std::cout << input.first << " (" << input.second << ")" << std::endl;
-  }
+    // Display sorted user inputs and timestamps
+    for (int i = 0; i < userInputs.size(); i++) {
+        cout << userInputs[i] << " " << timestamps[i] << endl;
+    }
 
-  return 0;
+    return 0;
 }

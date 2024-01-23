@@ -1,24 +1,23 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <chrono>
+  #include <iostream>
+  #include <vector>
+  #include <algorithm>
+  #include <ctime>
 
-int main()
-{
-    std::vector<std::string> inputs;
-    std::string input;
-    while (std::cin >> input)
-    {
-        inputs.push_back(input);
-    }
+  using namespace std;
 
-    std::sort(inputs.begin(), inputs.end());
+  int main() {
+      vector<int> numbers;
+      int number;
 
-    for (const auto& input : inputs)
-    {
-        std::cout << input << " ";
-    }
-    std::cout << std::endl;
+      while (cin >> number) {
+          numbers.push_back(number);
+      }
 
-    return 0;
-}
+      sort(numbers.begin(), numbers.end());
+
+      for (int i = 0; i < numbers.size(); i++) {
+          cout << numbers[i] << " ";
+      }
+
+      return 0;
+  }

@@ -7,19 +7,24 @@
 using namespace std;
 
 int main() {
-    vector<pair<int, time_t>> input_record;
-    int input;
-    time_t time_stamp;
+    vector<string> userInputs;
+    vector<time_t> timestamps;
 
-    while (true) {
-        cout << "Enter a number: ";
+    // Get user inputs and timestamps
+    for (int i = 0; i < 5; i++) {
+        string input;
         cin >> input;
-        time_stamp = time(NULL);
-        input_record.push_back(make_pair(input, time_stamp));
-        sort(input_record.begin(), input_record.end());
-        for (auto& record : input_record) {
-            cout << record.first << " " << record.second << endl;
-        }
+        userInputs.push_back(input);
+        timestamps.push_back(time(0));
+    }
+
+    // Sort user inputs and timestamps
+    sort(userInputs.begin(), userInputs.end());
+    sort(timestamps.begin(), timestamps.end());
+
+    // Display sorted user inputs and timestamps
+    for (int i = 0; i < userInputs.size(); i++) {
+        cout << userInputs[i] << " " << timestamps[i] << endl;
     }
 
     return 0;
