@@ -29,10 +29,19 @@ docker run -it --shm-size 60G --gpus all \
 -v /path/to/dir/:/home/username/CodeGeneration/ \
 -v /path/to/storage/:/storage/ CodeGeneration
 ```
-You can install the following dependencies to run tasks in the environment:
-```bash
-pip install -r requirements.txt
-```
+## Dependencies 
+Please satisfy the following dependencies to train MS-TCT correctly: 
+- pytorch 2.3
+- python 3.10 
+- transformers=4.33.0
+- accelerate>=0.20.3
+- peft
+- llama-cpp-python
+- openai
+- tiktoken
+- chromadb
+- langchain
+- 
 ### 🚀 Models relevant for code generation (ordered by most recent first)
 
 | Name                        | Size             | Languages                                       | Organization                | ⭐/❤️  | Released  | Open Source |
