@@ -41,7 +41,7 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 - tiktoken
 - chromadb
 - langchain
-- 
+
 ### 🚀 Models relevant for code generation (ordered by most recent first)
 
 | Name                        | Size             | Languages                                       | Organization                | ⭐/❤️  | Released  | Open Source |
