@@ -91,17 +91,17 @@ We have identified several key factors influencing code generation, However, the
 
 |       generated code       | can compile  | can exit    | input number in ascending order  | have record of time stamps  |
 | ------------ | ------------------ | ------------------ | ------------------ |------------------ |
-| CodeLlama-7b-Instruct-prompt1.cpp | **-**    | **-**     | **-**    | **-**   |
-| CodeLlama-7b-Instruct-prompt2.cpp | **-**    | **-**     | **-**    | **-**   |
+| CodeLlama-7b-Instruct-prompt1.cpp | **+**    | **+**     | **-**    | **-**   |
+| CodeLlama-7b-Instruct-prompt2.cpp | **+**    | **+**     | **+**    | **-**   |
 | CodeLlama-7b-Instruct-prompt3.cpp | **-**    | **-**     | **-**    | **-**   |
-| CodeLlama-13b-Instruct-prompt1.cpp    | **+** | **-**     | **-**    | **-**   |
-| CodeLlama-13b-Instruct-prompt2.cpp    | **-** | **-**     | **-**    | **-**   |
+| CodeLlama-13b-Instruct-prompt1.cpp    | **+** | **+**     | **-**    | **-**   |
+| CodeLlama-13b-Instruct-prompt2.cpp    | **+** | **+**     | **+**    | **-**   |
 | CodeLlama-13b-Instruct-prompt3.cpp    | **+** | **-**     | **-**    | **-**   |
 | Langchain_CodeLlama-13b-prompt1.cpp     |  **-**    | **-**     | **-**    | **-**   |
 | Langchain_CodeLlama-13b-prompt2.cpp     |  **-**    | **-**     | **-**    | **-**   |
-| CodeLlama-34b-Instruct-prompt1.cpp | **+** | **+** | **-**    | **-**   |
-| CodeLlama-34b-Instruct-prompt2.cpp | **-** | **-** | **-**    | **-**   |
-| CodeLlama-34b-Instruct-prompt3.cpp | **+** | **-**| **-**    | **-**   |
+| CodeLlama-34b-Instruct-prompt1.cpp | **+** | **+** | **+**    | **-**   |
+| CodeLlama-34b-Instruct-prompt2.cpp | **+** | **+** | **+**    | **-**   |
+| CodeLlama-34b-Instruct-prompt3.cpp | **+** | **+**| **+**    | **+**   |
 | CodeLlama-7b-finetuned-prompt1.cpp | **+** | **+** | **+** | **-** |
 | CodeLlama-7b-finetuned-prompt2.cpp | **+** | **+** | **+** | **+** |
 | Langchain_GPT3.5_turbo-prompt1.cpp | **+** | **+** | **+** | **+** |
