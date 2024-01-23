@@ -18,18 +18,7 @@ CodeGeneration
 ## 🎨 Instructions:
 C++ code generation using a pre-trained model. Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. The record should be sorted in ascending order based on the provided input. Leverage a pre-trained code model to generate the C++ code based on specific prompts.
 
-## ✨ Setting up the Docker environment and installing the dependencies
-Go to folder ```docker/```.
-```
-docker build -f Dockerfile -t CodeGeneration \
---build-arg username=$(username) .
-```
-```
-docker run -it --shm-size 60G --gpus all \
--v /path/to/dir/:/home/username/CodeGeneration/ \
--v /path/to/storage/:/storage/ CodeGeneration
-```
-## Dependencies 
+## ✨ Dependencies 
 Please satisfy the following dependencies to train MS-TCT correctly: 
 - pytorch 2.3
 - python 3.10 
