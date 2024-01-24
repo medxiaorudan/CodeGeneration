@@ -61,23 +61,21 @@ model_names = ["codellama/CodeLlama-7b-Instruct-hf", "codellama/CodeLlama-13b-In
 
 # Code Llama sequences generation
 
-prompt1 = f"<s>[INST] <<SYS>>\nwrite a C++ programming code that can solve the Task.\n<</SYS>> \
-Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. </s> \
-<s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. </s> \
-<s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST] \
-"
+prompt1 = f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>>\n\nGenerate a C++ program \
+that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. [/INST] </s> \
+<s>[INST] Ensure the program sorts the user inputs in ascending order based on the provided numeric input. [/INST] </s> \
+<s>[INST] Enhance the program to display timestamps along with the sorted user inputs. [/INST]"  
 
-prompt2 = f"<s>[INST] <<SYS>>\nwrite a C++ programming code that can solve the Task.\n<</SYS>> \
-Generate a C++ program that accepts numeric input from the user and maintains a record of previous user inputs with timestamps.</s>  \
-<s>[INST] Include error handling to handle non-numeric inputs and provide a message to the user when exiting the program. </s> \
-<s>[INST] Implement C++ standard library algorithm header for std::sort to ensure the program can sort the user inputs in ascending order based on the provided numeric input. </s> \
-<s>[INST] Use a suitable data structure to efficiently store and manage the user input and timestamps records. </s>\
-<s>[INST] Implement C++ standard library vector header. Include the C++ standard library ctime header for handling timestamps. </s>\
-<s>[INST] Implement a function to display the sorted user input records with timestamps. </INST>"
- 
-prompt3 = f"<s><<SYS>>\nwrite a C++ programming code that can solve the Task.\n<</SYS>> \
-Create a basic program in C++ that accepts numeric input from the user and maintains a record of previous user input together with time stamps. \
-The record should be sorted in ascending order based on the provided input."
+prompt2 =  f"<s>[INST] <<SYS>>\nProvide answers in C++\n<</SYS>>\n\nGenerate a C++ program \
+that accepts numeric input from the user and maintains a record of previous user inputs with timestamps. [/INST]  </s> \
+<s>[INST] Implement C++ standard library algorithm header to ensure the program can sort the user inputs in ascending order based on the provided numeric input. [/INST]  </s> \
+<s>[INST] Use data structure to store and manage the user input and timestamps records. Implement C++ standard library vector header and the C++ standard library ctime header for handling timestamps. [/INST]  </s> \
+<s>[INST] Include error handling to handle inputs and provide a message to the user when exiting the program. [/INST]  </s> \
+<s>[INST] Implement a function to display the sorted user input records with timestamps. [/INST]"
+
+prompt3 = f"<s><<SYS>>\nProvide answers in C++\n<</SYS>>\n\nCreate a basic program in C++ that \
+accepts numeric input from the user and maintains a record of previous user input together \
+with time stamps. The record should be sorted in ascending order based on the provided input."
 
 for model_name in model_names:
     sequences_prompt1 = generate_sequences(model_name, prompt1)
