@@ -97,8 +97,6 @@ We have identified several key factors influencing code generation, However, the
 | CodeLlama-13b-Instruct-prompt1.cpp    | **+** | **+**     | **-**    | **-**   |
 | CodeLlama-13b-Instruct-prompt2.cpp    | **+** | **+**     | **+**    | **-**   |
 | CodeLlama-13b-Instruct-prompt3.cpp    | **+** | **-**     | **-**    | **-**   |
-| Langchain_CodeLlama-13b-prompt1.cpp     |  **-**    | **-**     | **-**    | **-**   |
-| Langchain_CodeLlama-13b-prompt2.cpp     |  **-**    | **-**     | **-**    | **-**   |
 | CodeLlama-34b-Instruct-prompt1.cpp | **+** | **+** | **+**    | **-**   |
 | CodeLlama-34b-Instruct-prompt2.cpp | **+** | **+** | **+**    | **-**   |
 | CodeLlama-34b-Instruct-prompt3.cpp | **+** | **+**| **+**    | **+**   |
