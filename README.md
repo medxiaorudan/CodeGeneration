@@ -35,9 +35,9 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 
 | Name                        | Size             | Languages                                       | Organization                | ⭐/❤️  | Released  | Open Source |
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
-| [Codestral](https://mistral.ai/en/news/codestral) | 22B | 80+ (Python, Java, C, C++, etc.) | Mistral AI | 12k | 2024-5 | No |
-| [DeepSeek Coder](https://huggingface.co/deepseek-ai) | 1B/6B/7B/33B | 338 (Python, JS, Java, C/C++, etc.) | DeepSeek | 14k | 2024-1 | Yes |
-| [Magicoder](https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B) | 6.7B/7B | 40+ | WizardLM Team | 1.2k | 2023-12 | Yes |
+| [Codestral](https://mistral.ai/en/news/codestral) | 22B | 80+ (Python, Java, C, C++, etc.) | Mistral AI | 1.21k | 2024-5 | No |
+| [DeepSeek Coder](https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct) | 1B/6B/7B/33B | 338 (Python, JS, Java, C/C++, etc.) | DeepSeek | 493 | 2024-1 | Yes |
+| [Magicoder](https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B) | 6.7B/7B | 40+ | WizardLM Team | 201 | 2023-12 | Yes |
 | [StableCode](https://github.com/Stability-AI/StableCode) | 3B | Python, JS, Java, C, etc. | Stability AI | 125 | 2023-11 | Yes |
 | [Phind CodeLlama v2](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)         | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
 | [WizardCoder-Python](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
