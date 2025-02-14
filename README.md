@@ -35,6 +35,10 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 
 | Name                        | Size             | Languages                                       | Organization                | ⭐/❤️  | Released  | Open Source |
 |-----------------------------|------------------|-------------------------------------------------|-----------------------------|--------|-----------|-------------|
+| [Codestral](https://mistral.ai/en/news/codestral) | 22B | 80+ (Python, Java, C, C++, etc.) | Mistral AI | 12k | 2024-5 | No |
+| [DeepSeek Coder](https://huggingface.co/deepseek-ai) | 1B/6B/7B/33B | 338 (Python, JS, Java, C/C++, etc.) | DeepSeek | 14k | 2024-1 | Yes |
+| [Magicoder](https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B) | 6.7B/7B | 40+ | WizardLM Team | 1.2k | 2023-12 | Yes |
+| [StableCode](https://github.com/Stability-AI/StableCode) | 3B | Python, JS, Java, C, etc. | Stability AI | 125 | 2023-11 | Yes |
 | [Phind CodeLlama v2](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)         | 34B              | Many                                            | Phind                       | 502    | 2023-8-27 | Yes         |
 | [WizardCoder-Python](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)           | 7/13/34B         | Python                                          | WizardLM                    | 658    | 2023-8    | Yes         |
 | [CodeLlama](https://github.com/facebookresearch/codellama)                    | 7/13/34B         | Many                                            | Meta AI                     | 11092  | 2023-8    | Yes         |
@@ -52,6 +56,10 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 ### 🤖 Popular datasets for code generation (ordered by most recent first)
 | Name         | Examples                                                | Languages                                               | ⭐/❤️  | Released   |
 |--------------|---------------------------------------------------------|------------------------------------------------------------|-----|------------|
+| [LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench) | 4,000+ | Python, Java, JS, C++ | 311 | 2024-5 |
+| [EvalPlus](https://github.com/evalplus/evalplus) | 164+ (HumanEval++)<br>974+ (MBPP++) | Python | 1.4k | 2023-12 |
+| [CodeArena](https://codearenaeval.github.io/) | 10,000+ security-focused | Python, C/C++ | 870 | 2023-11 |
+| [CrossCodeEval](https://github.com/amazon-science/cceval) | 1.5M parallel samples | 8 languages | 129 | 2024-3 |
 | [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x)  | 820                                                     | Python, C++, Java, JavaScript, and Go                      | 53  | 2023-8-27  |
 | [CoderEval](https://github.com/CodeArtsSnap/CoderEval)    | 328                                                     | Python, Java                                               | 13  | 2023-2-1   |
 | [DS-1000](https://github.com/xlang-ai/DS-1000)      | 1000                                                    | Python                                                     | 146 | 2022-11-18 |
