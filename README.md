@@ -45,7 +45,7 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 | [WizardCoder](https://huggingface.co/WizardLM/WizardCoder-15B-V1.0)                  | 15B              | 80+                                             | WizardLM                    | 661    | 2023-6    | Yes         |
 | [replit-glaive](https://huggingface.co/sahil2801/replit-code-instruct-glaive)                | 3B               | Python                                          | Replit                      | 85     | 2023-7    | Yes         |
 | [CodeGeeX](https://github.com/THUDM/CodeGeeX)                     | 13B              | Python, C++, Java, JavaScript, Go                | THUDM                       | 7.42k   | 2023-5-16 | Yes         |
-| [Starcoder](https://github.com/bigcode-project/starcoder)                    | 15B              | 80+                                             | Hugging Face and ServiceNow | 6595   | 2023-5    | Yes         |
+| [Starcoder](https://github.com/bigcode-project/starcoder)                    | 15B              | 80+                                             | Hugging Face and ServiceNow | 6.60k   | 2023-5    | Yes         |
 | [replit-v1-3b](https://huggingface.co/replit/replit-code-v1-3b)                 | 3B               | 20+                                             | Replit                      | 698    | 2023-5    | Yes         |
 | [CodeT5+](https://github.com/salesforce/CodeT5)                      | 220M, 770M, 2B, 6B, 16B | Ruby, JavaScript, Go, Python, Java, PHP      | Salesforce                  | 2.44k   | 2023-5    | Yes         |
 | [IBM Watson Code Assistant](https://www.ibm.com/products/watsonx-code-assistant)    | 350M             | Many                                            | IBM                         |         | 2023-5    | No          |
@@ -68,7 +68,7 @@ Please satisfy the following dependencies to train MS-TCT correctly:
 | [MBPP](https://huggingface.co/datasets/mbpp)         | 974                                                     | Python                                                     | 62  | 2021-8-16  |
 | [HumanEval](https://github.com/openai/human-eval)    | 164                                                     | Python                                                     | 1.62k| 2021-7-17  |
 | [APPS](https://github.com/hendrycks/apps)         | 10000                                                   | Python                                                     | 316 | 2021-5-20  |
-| [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)    | 124K                                                    | Java, C#                                                   | 1315| 2021-2-9   |
+| [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)    | 124K                                                    | Java, C#                                                   | 1.32k| 2021-2-9   |
 | [SPoC](https://github.com/Sumith1896/spoc)         | 18356 Pseudocode to Code                                | C++                                                        | 10  | 2019       |
 
 ### 🎉 Run the code 
